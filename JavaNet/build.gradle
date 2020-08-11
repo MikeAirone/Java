@@ -1,0 +1,15 @@
+apply plugin: "java"
+apply plugin: "application"
+
+mainClassName = "javanet.Server"
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+jar {
+	manifest.attributes("Main-Class": mainClassName);
+}
+
+wrapper {
+	gradleVersion = '6.3'
+}
